@@ -1,0 +1,43 @@
+/*
+ * babypink.css — Sub-Version Space Portal "Baby Pink" theme
+ *
+ * Child theme: imports default.css and overrides design tokens only.
+ * Place any custom background.png / headerimageblurred.png / mainlogo.png
+ * in this same folder to override the default theme's images
+ * (falls back to /themes/default/ via theme_image_url() if absent).
+ */
+
+@import url('../default/default.css');
+
+:root {
+    --clr-bg:          #fff5f8;
+    --clr-surface:     #ffffff;
+    --clr-surface-2:   #fdeef3;
+    --clr-border:      #fbdce6;
+    --clr-border-light:#fdedf2;
+
+    /* "lilac" tokens repurposed as the primary baby-pink accent */
+    --clr-lilac-soft:  #fde0ea;
+    --clr-lilac-mid:   #f7b8cf;
+    --clr-lilac-deep:  #ef84ad;
+    --clr-lilac-text:  #c14c80;
+
+    /* "rose" tokens become a deeper hot-pink accent for contrast */
+    --clr-rose-soft:   #ffe3ec;
+    --clr-rose-mid:    #f592b3;
+    --clr-rose-accent: #ec5c8d;
+
+    --clr-accent-lilac: var(--clr-lilac-deep);
+    --clr-accent-rose:  var(--clr-rose-accent);
+
+    --clr-text-primary:   #3a2530;
+    --clr-text-secondary: #8a6b78;
+    --clr-text-muted:     #c9a3b3;
+
+    --clr-online:  #52b788;
+    --clr-away:    #e0a05a;
+    --clr-offline: #c9a3b3;
+
+    --shadow-card: 0 2px 12px rgba(230, 110, 160, 0.10), 0 1px 3px rgba(230, 110, 160, 0.06);
+    --shadow-nav:  0 1px 0 var(--clr-border), 0 2px 16px rgba(230, 110, 160, 0.08);
+}

@@ -1,0 +1,8 @@
+@import '../default/default.css';
+
+:root {
+  --clr-lilac-deep: #2a7a9b;
+  /* override anything else you want */
+
+  --theme-bg-image: url('../default/background.png');
+}
